@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     height: 10vh;
-    width: 90%;
+    width: 95%;
 }
 
 .menu__logo {
@@ -93,14 +93,22 @@ body {
 
 .main {
     display: flex;
-    width: 90%;
+    justify-content: center;
+    width: 100%;
     height: 80%;
 }
 
 .main .main__left {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 50%;
+}
+
+.main__left-promo {
+   font-size: 1rem; 
+   background-color: rgba(42,237,205, .4);
+   color: rgba(123, 202, 189);
 }
 
 .main .main__right {
@@ -108,20 +116,24 @@ body {
     position: relative;
 }
 
+.main .main__right img {
+    border-radius: 10px;
+}
+
 .main .main__right img.main-img {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-    width: 70% ;
+    right: 10%;
+    transform: translateY(-50%);
     height: 90%;
-
+    width: 65%;
+    
 }
 
 .main .main__right img.secondary-img {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 40%;
-    height: 40%;
+    left: 10%;
+    width: 32.5%;
+    height: 45%;
 }
